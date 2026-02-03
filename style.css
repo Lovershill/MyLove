@@ -58,7 +58,7 @@ body {
     gap: 1px;
     padding-top: 180px;
 
-    transform: scale(1.2);
+    transform: none;
     opacity: 0;
     transition: transform 0.6s ease, opacity 0.6s ease;
 }
@@ -69,13 +69,13 @@ body {
 }
 
 h1 {
-    font-size: 30px;
-    margin:0;
+    font-size: clamp(18px, 5vw, 30px);
 }
 
 p {
-    font-size: 40px;
+    font-size: clamp(16px, 6vw, 28px);
 }
+
 
 /* Cat */
 
@@ -102,11 +102,17 @@ p {
 }
 
 .btn {
+     max-width: 30vw;
     width: 120px;
     cursor: pointer;
     user-select: none;
 }
-
+.cat,
+.datch-dog,
+.dog {
+    max-width: 40vw;
+    height: auto;
+}
 .yes-btn,
 .no-btn {
 width: 120px;
@@ -203,3 +209,31 @@ display: inline-block;
     border-radius: 12px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
+@media (max-width: 600px) {
+
+    body {
+        padding: 10px;
+    }
+
+    .letter-window {
+        width: 95vw;
+        aspect-ratio: auto;
+        padding-top: 140px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    .btn {
+        width: 90px;
+    }
+
+    .buttons {
+        margin-top: 10px;
+    }
+}
+* {
+    box-sizing: border-box;
+}
+
