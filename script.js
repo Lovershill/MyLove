@@ -85,8 +85,7 @@ noBtn.addEventListener("mouseover", () => {
 // YES is clicked
 
 yesBtn.addEventListener("click", () => {
-     bgMusic.pause();
-    yesMusic.play();
+  
 
     title.textContent = "Yaaaaaaaaaaaaaaayy!";
 
@@ -103,4 +102,5 @@ yesBtn.addEventListener("click", () => {
     memoriesBtn.style.display = "inline-block";
 
 });
+
 
