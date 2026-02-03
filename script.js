@@ -12,10 +12,10 @@ const buttons = document.getElementById("letter-buttons");
 const finalText = document.getElementById("final-text");
 const datchdog = document.getElementById("datch-dog");
 const bgMusic = document.getElementById("bg-music");
-
 const memoriesBtn = document.getElementById("memoriesBtn");
 const memoriesModal = document.getElementById("memoriesModal");
 const closeModal = document.getElementById("closeModal");
+
 
 memoriesBtn.addEventListener("click", () => {
     memoriesModal.style.display = "flex";
@@ -30,7 +30,6 @@ window.addEventListener("click", (e) => {
         memoriesModal.style.display = "none";
     }
 });
-
 // Click Envelope
 
 envelope.addEventListener("click", () => {
@@ -39,7 +38,7 @@ envelope.addEventListener("click", () => {
 
      bgMusic.volume = 0.4;   // romantic, not loud
     bgMusic.play();
-    
+
     setTimeout( () => {
         document.querySelector(".letter-window").classList.add("open");
     },50);
@@ -85,8 +84,6 @@ noBtn.addEventListener("mouseover", () => {
 // YES is clicked
 
 yesBtn.addEventListener("click", () => {
-  
-
     title.textContent = "Yaaaaaaaaaaaaaaayy!";
 
     catImg.src = "cat_dance.gif";
@@ -94,13 +91,12 @@ yesBtn.addEventListener("click", () => {
     document.querySelector(".letter-window").classList.add("final");
 
     buttons.style.display = "none";
-
+memoriesBtn.style.display = "inline-block";
     finalText.style.display = "block";
     dogImg.style.display = "none";
     title2.style.display = "none";
     datchdog.style.display = "block";
-    memoriesBtn.style.display = "inline-block";
+    
+
 
 });
-
-
