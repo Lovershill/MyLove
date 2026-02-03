@@ -154,6 +154,8 @@ display: inline-block;
     background: #ff7eb3;
     color: white;
     animation: pulse 1.5s infinite;
+    z-index: 10;
+    position: relative;
 }
 
 @keyframes pulse {
@@ -202,5 +204,6 @@ display: inline-block;
     border-radius: 12px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
+
 
 
